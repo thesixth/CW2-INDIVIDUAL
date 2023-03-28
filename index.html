@@ -182,7 +182,7 @@
                 showProduct: true,
                 cart: [] // array to store items in shopping cart
             },
-            //create methods to sort the subjects
+            // computed properties
             methods: {
                
                 addToCart(subject) {
@@ -238,7 +238,7 @@
                 },
                 
             },
-            computed: { // the computed property object
+            computed: { // computed properties
                 sortedSubjects() {
                  // create a copy of the first array
                  const filterInput = this.searchInput.toLowerCase();
