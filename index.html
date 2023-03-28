@@ -238,7 +238,7 @@
             },
             computed: { // the computed property object
                 sortedSubjects() {
-                 // create a copy of the original array
+                 // create a copy of the first array
                  const filterInput = this.searchInput.toLowerCase();
                 if (this.sortBySubject) {
                     this.subjects.sort((a, b) => a.title.localeCompare(b.title));
