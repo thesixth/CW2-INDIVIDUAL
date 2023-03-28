@@ -184,7 +184,7 @@
             },
             // computed properties
             methods: {
-               
+               // add item to cart
                 addToCart(subject) {
                     this.cart.push(subject)
                     subject.availableInventory -= 1
@@ -200,6 +200,7 @@
                     let show = this.cart
                     return show
                 },
+                // remove item from cart
                 removeCartItem(id) {
                     let showcart = this.cart
                     let less = this.subjects
