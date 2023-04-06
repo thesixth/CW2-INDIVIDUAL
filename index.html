@@ -215,8 +215,7 @@
                         console.log(less[i].id)
                         if (id == less[i].id) {
                             less[i].stock += 1
-
-                        }
+                     }
                     }
                 },
                 // count items in cart
@@ -230,7 +229,7 @@
                         }
                     }
                     return count;
-                    // return this.cart.length || '';
+                    // return this.cart.filter(item => item.id === id).length;
                 },
                 
                 showCheckout() {
@@ -238,10 +237,15 @@
                 },
                 submitForm() {
                     alert('Order Submitted')
+                    this.name = ''
+                    this.number = ''
+                    this.cart = []
+                    this.showProduct = true
                 },
                 
             },
-            computed: { // computed properties
+            computed: { // computed properties  enable you to create a property that can be used to modify,
+                // manipulate, and display data within your components in a readable and efficient manner.
                 sortedSubjects() {
                  // filter subjects by search input
                  const filterInput = this.searchInput.toLowerCase();
